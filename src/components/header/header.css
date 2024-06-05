@@ -1,0 +1,50 @@
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0.75rem;
+    width: 50vw;
+    background-color: white;
+
+}
+
+.options-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.select {
+    background: transparent; 
+    border: none; 
+    outline: none; 
+
+}
+
+.dark-mode {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1rem;
+}
+
+.toggle {
+    display: inline-block;
+    width: 1rem;
+    height: 0.5rem;
+    margin: auto 2rem;
+
+}
+
+.slider {
+    cursor: pointer;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: grey ;
+    transition: .4s;
+    border-radius: 2px;
+
+}

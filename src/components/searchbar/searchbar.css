@@ -1,0 +1,32 @@
+.div-container {
+    padding: 0.75rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    width: 48vw;
+    border-radius: 10px;
+    padding: 1.25rem;
+}
+
+
+
+.searchbar {
+    color: #757575;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: transparent; 
+    border: none; 
+    outline: none; 
+    flex-grow: 1;
+}
+
+.button {
+    background: transparent; 
+    border: none; 
+    outline: none; 
+    padding: 0; /* Remove default padding */
+}
