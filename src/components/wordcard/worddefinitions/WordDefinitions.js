@@ -1,4 +1,5 @@
 import React from 'react';
+import './worddefinitions.css'
 
 function WordDefinitions() {
     return (

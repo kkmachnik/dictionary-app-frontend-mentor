@@ -1,0 +1,25 @@
+.worddisplay-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+
+.fonetic {
+    color: #a445ed;
+    font-weight: 700;
+}
+
+.play-button{
+    cursor: pointer;
+    background:transparent; 
+    border: none; 
+    outline: none; 
+}
+
+.play-icon:hover {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(79%) saturate(1921%) hue-rotate(256deg) brightness(96%) contrast(94%);
+};
+
+
+

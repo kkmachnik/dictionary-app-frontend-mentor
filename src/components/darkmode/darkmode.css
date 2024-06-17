@@ -1,0 +1,56 @@
+.dark-mode {
+    display: flex;
+    cursor: pointer;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-container{
+    width: 2.5rem;
+    height: 1rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem 0 0.5rem;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+
+.toggle-button{
+    background-color: #757575;
+    width: 2.5rem;
+    height: 1.25rem;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s;
+}
+
+.toggle-button::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 90%;
+    margin: 4px;
+    transition: 0.4s;
+}
+
+input:checked + .toggle-button{
+    background-color: #a445ed;
+}
+input:checked + .toggle-button::before{
+    transform: translateX(1.25rem);
+}
+
+
+  
+.moon-icon-checked {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(32%) saturate(4690%) hue-rotate(258deg) brightness(97%) contrast(92%);}

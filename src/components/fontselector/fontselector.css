@@ -1,0 +1,20 @@
+.theme-mode {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background:transparent; 
+    border: none; 
+    outline: none; 
+    padding: 0 0 0 5.75rem;
+}
+
+.font-choice {
+    padding: 0.5rem;
+    font-size: 18px;
+}
+
+.font-choice-container {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+} 

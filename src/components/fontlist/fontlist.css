@@ -1,0 +1,25 @@
+.font-selection {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 10px 24px 0px rgba(233, 233, 233, 1);
+    border-radius: 15px;
+    padding: 0.25rem 5.5rem 0.25rem 0;
+    
+
+}
+
+
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 0.5rem 0;
+}
+
+li:hover {
+    color: #a445ed;
+}
+
+.font-selection.dark-mode-active {
+    box-shadow: 0px 10px 24px 0px rgba(164, 69, 237, 1);
+    background-color: #1f1f1f;
+}

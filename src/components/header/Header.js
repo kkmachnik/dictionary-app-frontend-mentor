@@ -1,27 +1,24 @@
 import React from 'react';
 import logoIcon from '../../assets/images/logo.svg';
-import moonIcon from '../../assets/images/icon-moon.svg';
+import FontSelector from '../fontselector/FontSelector.js';
+import DarkMode from '../darkmode/DarkMode.js'
 import './header.css';
 
-function Header() {
+function Header({currentFont, handleSetFont, handleSetDarkMode, handleShowOptions, showOptions, darkMode}) {
+
     return (
-    <div className='header-container'>
+    <div className={`header-container ${darkMode ? 'dark-mode-active' : ''}`}  >
          <img src={logoIcon} alt='logo icon'/>
          <div className='options-container'>
-            <select className='select'>
-                 <option>Sans Serif</option>
-                 <option>Serif</option>
-                 <option>Mono</option>
-            </select>
-            <div className='dark-mode'>
-                <div className="toggle-container">
-                    <label for="check" className="toggle">
-                    <input type="checkbox" id="check"/>
-                        <span className='slider'></span>
-                    </label>
-                </div>
-                <img alt="moon icon" src={moonIcon}/>
-            </div>
+            <FontSelector
+                    currentFont={currentFont}
+                    showOptions={showOptions}
+                    handleShowOptions={handleShowOptions}
+                    darkMode={darkMode}
+                    setFont={handleSetFont}
+                />
+            <span className='vertical-line'></span>
+            <DarkMode  handleSetDarkMode={handleSetDarkMode} darkMode={darkMode}/>
          </div>
     </div>
     )
